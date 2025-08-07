@@ -188,7 +188,7 @@ To add analytics:
 ## Research Links
 
 - **GitHub Repository**: [IndiCASA Dataset & Code](https://github.com/santhosh-gnse/IndiCASA.git)
-- **Research Paper**: AAAI 2025 (link to be updated)
+- **Research Paper**: AIES 2025 (link to be updated)
 - **Research Team**: Centre for Responsible AI, IIT Madras & UT Dallas
 
 ## License

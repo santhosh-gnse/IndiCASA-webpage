@@ -81,7 +81,7 @@ function App() {
         <div className="hero-content">
           <div className="paper-header">
             <div className="conference-badge">
-              <span>🏆 AAAI 2025</span>
+              <span>🏆 AIES 2025</span>
             </div>
             
             <h1 className="paper-title">
