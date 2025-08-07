@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/IndiCASA/static/css/main.8daea8aa.css",
+    "main.js": "/IndiCASA/static/js/main.fdb9067c.js",
+    "static/js/453.c601676b.chunk.js": "/IndiCASA/static/js/453.c601676b.chunk.js",
+    "index.html": "/IndiCASA/index.html",
+    "main.8daea8aa.css.map": "/IndiCASA/static/css/main.8daea8aa.css.map",
+    "main.fdb9067c.js.map": "/IndiCASA/static/js/main.fdb9067c.js.map",
+    "453.c601676b.chunk.js.map": "/IndiCASA/static/js/453.c601676b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8daea8aa.css",
+    "static/js/main.fdb9067c.js"
+  ]
+}
