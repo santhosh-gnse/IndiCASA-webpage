@@ -8,7 +8,7 @@ A modern, responsive React website showcasing the IndiCASA research project - a 
 
 ### Key Features
 
-- 🏆 **AAAI 2025 Research Paper** - Cutting-edge AI research
+- 🏆 **AIES 2025 — Eighth AAAI/ACM Conference on AI, Ethics, and Society (AIES 2025)** - Cutting-edge AI research
 - 📊 **2,575 Human-Validated Sentences** - Comprehensive dataset
 - 🎯 **5 Bias Dimensions** - Caste, Gender, Religion, Disability, Socioeconomic
 - 🧠 **Contrastive Learning Framework** - Advanced ML techniques
@@ -24,17 +24,20 @@ A modern, responsive React website showcasing the IndiCASA research project - a 
 ## Website Features
 
 ### 🎨 Modern Design
+
 - Responsive, mobile-first design
 - Smooth scroll animations and interactions
 - Professional academic styling
 - Interactive visualizations
 
 ### 📱 Responsive Layout
+
 - Optimized for desktop, tablet, and mobile devices
 - Progressive Web App (PWA) support
 - Fast loading and performance optimized
 
 ### 🔍 SEO Optimized
+
 - Structured data markup
 - Open Graph and Twitter meta tags
 - Academic research-focused content
@@ -42,23 +45,27 @@ A modern, responsive React website showcasing the IndiCASA research project - a 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/indicasa-research-website.git
    cd indicasa-research-website
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -93,26 +100,31 @@ public/
 ## Sections Overview
 
 ### 🏠 Hero Section
+
 - Eye-catching introduction with animated elements
 - Key statistics and call-to-action buttons
 - Interactive embedding space visualization
 
 ### 📖 About Section
+
 - Research problem and solution overview
 - Key research highlights and impact
 - Visual feature cards
 
 ### 🔬 Methodology Section
+
 - Three-phase research approach visualization
 - Detailed bias dimensions breakdown
 - Process flow illustrations
 
 ### 📊 Results Section
+
 - Key findings and insights
 - Model comparison tables
 - Interactive result visualizations
 
 ### 📂 Dataset Section
+
 - Comprehensive dataset statistics
 - Category-wise breakdown charts
 - Example sentences and access information
@@ -120,6 +132,7 @@ public/
 ## Customization
 
 ### Styling
+
 The website uses custom CSS with CSS Grid and Flexbox for layout. Key design elements:
 
 - **Color Scheme**: Purple gradient theme (`#667eea` to `#764ba2`)
@@ -128,6 +141,7 @@ The website uses custom CSS with CSS Grid and Flexbox for layout. Key design ele
 - **Responsive**: Mobile-first approach with breakpoints
 
 ### Content Updates
+
 To update research content:
 
 1. Modify the data in `App.js`
@@ -145,6 +159,7 @@ To update research content:
 ## SEO and Analytics
 
 ### Built-in SEO Features
+
 - Semantic HTML structure
 - Schema.org structured data
 - Open Graph meta tags
@@ -152,6 +167,7 @@ To update research content:
 - Proper heading hierarchy
 
 ### Analytics Integration
+
 To add analytics:
 
 1. Add Google Analytics or similar tracking code
@@ -161,17 +177,20 @@ To add analytics:
 ## Deployment Options
 
 ### Netlify (Recommended)
+
 1. Connect your GitHub repository
 2. Set build command: `npm run build`
 3. Set publish directory: `build`
 4. Deploy automatically on push
 
 ### Vercel
+
 1. Import your GitHub repository
 2. Vercel auto-detects React configuration
 3. Deploy with one click
 
 ### GitHub Pages
+
 1. Install `gh-pages`: `npm install --save-dev gh-pages`
 2. Add deploy script to `package.json`
 3. Run `npm run deploy`
@@ -187,9 +206,25 @@ To add analytics:
 
 ## Research Links
 
-- **GitHub Repository**: [IndiCASA Dataset & Code](https://github.com/santhosh-gnse/IndiCASA.git)
-- **Research Paper**: AIES 2025 (link to be updated)
+- **GitHub Repository**: [IndiCASA Dataset & Code](https://github.com/cerai-iitm/IndiCASA)
+- **Research Paper (arXiv)**: [IndiCASA on arXiv](https://arxiv.org/abs/2510.02742)
+- **AIES Proceedings**: [Eighth AAAI/ACM Conference on AI, Ethics, and Society — Proceedings entry](https://ojs.aaai.org/index.php/AIES/article/view/36605)
+- **Poster**: [PDF on Google Drive](https://drive.google.com/file/d/1KU1TsW109gdSqIcysSvR524JKSSQl8in/view?usp=sharing)
 - **Research Team**: Centre for Responsible AI, IIT Madras & UT Dallas
+
+### Recommended citation
+
+```
+@misc{s2025indicasadatasetbiasevaluation,
+   title={IndiCASA: A Dataset and Bias Evaluation Framework in LLMs Using Contrastive Embedding Similarity in the Indian Context},
+   author={Santhosh G S and Akshay Govind S and Gokul S Krishnan and Balaraman Ravindran and Sriraam Natarajan},
+   year={2025},
+   eprint={2510.02742},
+   archivePrefix={arXiv},
+   primaryClass={cs.CL},
+   url={https://arxiv.org/abs/2510.02742},
+}
+```
 
 ## License
 
@@ -199,12 +234,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Centre for Responsible AI, IIT Madras
 - University of Texas at Dallas
-- AAAI 2025 Conference
+- Eighth AAAI/ACM Conference on AI, Ethics, and Society (AIES 2025)
 - React.js community for excellent documentation and tools
 
 ## Contact
 
 For questions about the research:
+
 - Research Team: [Contact Information]
 - Website Issues: [GitHub Issues]
 

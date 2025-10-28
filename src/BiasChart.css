@@ -1,0 +1,141 @@
+/* Bias Chart Component Styling */
+
+.bias-chart-component {
+	width: 100%;
+	margin: 30px 0;
+}
+
+.chart-controls {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.chart-controls fieldset {
+	border: 2px solid #667eea;
+	border-radius: 12px;
+	padding: 15px 20px;
+	background: white;
+}
+
+.chart-controls legend {
+	font-weight: 600;
+	color: #667eea;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.chart-controls label {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 15px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #333;
+}
+
+.chart-controls input[type="radio"] {
+	margin-right: 6px;
+	cursor: pointer;
+	accent-color: #667eea;
+}
+
+.d3-chart-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.chart-wrapper {
+	border: 1px solid #e0e0e0;
+	border-radius: 12px;
+	background-color: #ffffff;
+	padding: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chart-wrapper:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chart-title {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: 600;
+	margin: 0 0 15px 0;
+	color: #667eea;
+}
+
+/* D3 SVG Axes Styling */
+.chart-wrapper .axis path,
+.chart-wrapper .axis line {
+	fill: none;
+	stroke: #aaa;
+	shape-rendering: crispEdges;
+}
+
+.chart-wrapper .axis text {
+	font-family: inherit;
+	font-size: 11px;
+	color: #555;
+}
+
+.chart-wrapper .y-axis-label {
+	font-size: 14px;
+	font-weight: 500;
+	fill: #333;
+}
+
+/* D3 Tooltip Styling */
+.d3-tooltip {
+	position: absolute;
+	opacity: 0;
+	background-color: #222;
+	color: #fff;
+	padding: 10px 12px;
+	border-radius: 6px;
+	font-size: 13px;
+	pointer-events: none;
+	transition: opacity 0.2s;
+	white-space: nowrap;
+	z-index: 1000;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.d3-tooltip strong {
+	color: #eee;
+	display: block;
+	margin-bottom: 5px;
+}
+
+/* Legend Styling */
+.legend-container text {
+	font-family: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.chart-controls {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.chart-controls fieldset {
+		width: 100%;
+	}
+
+	.chart-wrapper {
+		width: 100%;
+	}
+
+	.chart-wrapper svg {
+		width: 100% !important;
+		height: auto !important;
+	}
+}
