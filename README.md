@@ -226,23 +226,12 @@ To add analytics:
 }
 ```
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgments
 
 - Centre for Responsible AI, IIT Madras
 - University of Texas at Dallas
 - Eighth AAAI/ACM Conference on AI, Ethics, and Society (AIES 2025)
 - React.js community for excellent documentation and tools
-
-## Contact
-
-For questions about the research:
-
-- Research Team: [Contact Information]
-- Website Issues: [GitHub Issues]
 
 ---
 
