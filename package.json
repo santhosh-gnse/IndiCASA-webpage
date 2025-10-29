@@ -1,7 +1,7 @@
 {
 	"name": "indicasa-research-page",
 	"version": "0.1.0",
-	"homepage": "https://cerai-iitm.github.io/IndiCASA",
+	"homepage": "https://santhosh-gnse.github.io/IndiCASA-webpage",
 	"private": true,
 	"description": "IndiCASA: A Dataset and Bias Evaluation Framework for LLMs in Indian Context",
 	"dependencies": {
