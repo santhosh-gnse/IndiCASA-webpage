@@ -16,6 +16,11 @@
 html {
 	scroll-behavior: smooth;
 	font-size: 16px;
+	/* Prevent text size adjustment on mobile devices */
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 body {
@@ -27,12 +32,28 @@ body {
 	line-height: 1.7;
 	color: #1f2937;
 	background: #ffffff;
+	/* Prevent horizontal scroll on mobile */
+	overflow-x: hidden;
+	width: 100%;
+}
+
+/* Prevent all elements from causing horizontal scroll */
+* {
+	max-width: 100%;
+}
+
+/* Allow specific elements to override max-width */
+.container,
+section,
+div {
+	max-width: none;
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 60px;
+	width: 100%;
 }
 
 /* ===== NAVIGATION ===== */
@@ -1790,14 +1811,17 @@ section:nth-child(even) {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet and smaller laptops */
 @media (max-width: 1024px) {
 	.container,
 	.nav-container {
-		padding: 0 40px;
+		padding: 0 30px;
 	}
 
 	.hero-title {
 		font-size: 2.5rem;
+		line-height: 1.2;
 	}
 
 	.phase-features {
@@ -1834,7 +1858,12 @@ section:nth-child(even) {
 	}
 }
 
+/* Tablets and mobile landscape */
 @media (max-width: 768px) {
+	html {
+		font-size: 15px;
+	}
+
 	.container,
 	.nav-container {
 		padding: 0 20px;
@@ -1846,10 +1875,12 @@ section:nth-child(even) {
 
 	.hero-title {
 		font-size: 2rem;
+		line-height: 1.2;
 	}
 
 	.hero-subtitle {
 		font-size: 1.1rem;
+		line-height: 1.5;
 	}
 
 	.hero-content {
@@ -1862,6 +1893,11 @@ section:nth-child(even) {
 
 	.section-header h2 {
 		font-size: 2rem;
+		line-height: 1.2;
+	}
+
+	.section-header p {
+		font-size: 1rem;
 	}
 
 	.phase-card {
@@ -1876,10 +1912,6 @@ section:nth-child(even) {
 	.encoder-insights,
 	.model-insights {
 		grid-template-columns: 1fr;
-	}
-
-	.encoder-title-area h3 {
-		font-size: 1.5rem;
 	}
 
 	.encoder-title-area {
@@ -1938,10 +1970,6 @@ section:nth-child(even) {
 		padding: 25px 20px;
 	}
 
-	.category-distribution {
-		padding: 30px 20px;
-	}
-
 	.dataset-stats {
 		grid-template-columns: 1fr;
 	}
@@ -1954,20 +1982,174 @@ section:nth-child(even) {
 		grid-template-columns: 1fr;
 		gap: 30px;
 	}
+
+	/* Make charts responsive */
+	.bias-chart-component,
+	.tsne-visualization,
+	.bias-distribution-chart {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	/* Improve button spacing on mobile */
+	.chart-controls {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.chart-controls fieldset {
+		width: 100%;
+	}
 }
 
+/* Mobile devices */
 @media (max-width: 480px) {
+	html {
+		font-size: 14px;
+	}
+
+	.container,
+	.nav-container {
+		padding: 0 16px;
+	}
+
 	.hero-title {
+		font-size: 1.75rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1rem;
+	}
+
+	.hero-content {
+		padding: 80px 16px 50px;
+	}
+
+	section {
+		padding: 50px 0;
+	}
+
+	.section-header h2 {
 		font-size: 1.75rem;
 	}
 
 	.action-buttons {
 		flex-direction: column;
 		width: 100%;
+		gap: 12px;
 	}
 
 	.btn {
 		width: 100%;
 		justify-content: center;
+		padding: 14px 24px;
+		font-size: 0.95rem;
+	}
+
+	.phase-card {
+		padding: 25px 16px;
+	}
+
+	.encoder-training-section,
+	.llm-evaluation-section {
+		padding: 25px 16px;
+	}
+
+	.dataset-stats-vertical {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	/* Ensure text doesn't overflow */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+
+	p,
+	li {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+
+	/* Make tables scroll horizontally */
+	table {
+		display: block;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		white-space: nowrap;
+	}
+}
+
+/* Extra small mobile devices */
+@media (max-width: 360px) {
+	html {
+		font-size: 13px;
+	}
+
+	.container,
+	.nav-container {
+		padding: 0 12px;
+	}
+
+	.hero-title {
+		font-size: 1.5rem;
+	}
+
+	.btn {
+		padding: 12px 20px;
+		font-size: 0.9rem;
+	}
+}
+
+/* Landscape orientation fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+	.hero-content {
+		padding: 60px 20px 40px;
+	}
+
+	section {
+		padding: 40px 0;
+	}
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+	/* Increase tap targets for touch devices */
+	button,
+	a,
+	.btn {
+		min-height: 44px;
+		min-width: 44px;
+	}
+
+	/* Remove hover effects on touch devices */
+	.btn:hover,
+	.nav-links button:hover {
+		transform: none;
+	}
+}
+
+/* Print styles */
+@media print {
+	.navbar,
+	.footer,
+	.action-buttons {
+		display: none;
+	}
+
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	section {
+		page-break-inside: avoid;
 	}
 }
