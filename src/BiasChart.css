@@ -124,18 +124,78 @@
 	.chart-controls {
 		flex-direction: column;
 		gap: 15px;
+		padding: 0 10px;
 	}
 
 	.chart-controls fieldset {
 		width: 100%;
+		padding: 12px 15px;
+	}
+
+	.chart-controls label {
+		margin-right: 10px;
+		font-size: 13px;
+	}
+
+	.d3-chart-container {
+		gap: 20px;
+		padding: 0 10px;
 	}
 
 	.chart-wrapper {
 		width: 100%;
+		padding: 15px;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.chart-wrapper svg {
+		min-width: 500px;
 		width: 100% !important;
 		height: auto !important;
+	}
+
+	.chart-title {
+		font-size: 1.1em;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.bias-chart-component {
+		margin: 20px 0;
+	}
+
+	.chart-controls {
+		gap: 12px;
+	}
+
+	.chart-controls fieldset {
+		padding: 10px 12px;
+	}
+
+	.chart-controls legend {
+		font-size: 13px;
+	}
+
+	.chart-controls label {
+		font-size: 12px;
+		margin-right: 8px;
+	}
+
+	.d3-chart-container {
+		gap: 15px;
+	}
+
+	.chart-wrapper {
+		padding: 12px;
+	}
+
+	.chart-wrapper svg {
+		min-width: 450px;
+	}
+
+	.chart-title {
+		font-size: 1em;
 	}
 }
